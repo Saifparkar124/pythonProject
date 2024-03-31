@@ -24,6 +24,10 @@ razorpay_client = razorpay.Client(auth=("rzp_test_jj2yCck3bTssnU", "qoR7BWWy5Z7E
 #     response = requests.post(url, json=payload)
 #     return response.json()
 
+@app.route('/', methods=['GET'])
+def home():
+    return 'Hello World!'
+
 @app.route('/create_payment_link', methods=['POST'])
 def create_payment_link():
     try:
