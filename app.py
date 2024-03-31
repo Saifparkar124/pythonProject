@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 import razorpay
 import time
-# from flask_cors import CORS
+from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
